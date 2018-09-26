@@ -1,0 +1,172 @@
+/*
+
+    colors
+
+    pc #61e5d8
+    pl #99ffff
+    pd #19b2a7
+
+    sc #8e1c00
+    sl #c54e2b
+    sd #5b0000
+
+    bl rgba(0,0,0,0.8)
+
+*/
+
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.chrome-top {
+    -webkit-app-region: drag;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #61e5d8;
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    height: 64px;
+    width: 100vw;
+}
+
+.chrome-top-left {
+    height: 64px;
+}
+
+.chrome-top-logo {
+    height: 40px;
+}
+
+#chrome-logo {
+    height: 48px;
+    margin: 8px;
+}
+
+.chrome-top-center {
+    width: 96px;
+    height: 32px;
+    padding: 0 4px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+}
+
+.chrome-top-right {
+    width: 96px;
+    height: 32px;
+    padding: 0 4px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    margin: 8px;
+    height: min-content;
+
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 4px;
+    -webkit-app-region: no-drag;
+}
+
+.link-top {
+    height: 16px;
+    line-height: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.button-top,
+.icon-button {
+    margin: 4px;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+}
+
+.button:focus,
+.button:hover {
+    outline: none;
+    background-color: #19b2a7;
+}
+
+.button:focus path,
+.button:hover path {
+    fill: #ffffff;
+}
+
+.button-top-close:focus,
+.button-top-close:hover {
+    background-color: #c54e2b;
+}
+
+/* .button-top-close:focus path,
+.button-top-close:hover path {
+    fill: #8e1c00;
+} */
+
+.heading-only {
+    -webkit-app-region: drag;
+    background-color: #61e5d8;
+    height: 100%;
+    width: 100%;
+}
+
+.heading-only-box {
+    margin: 0 24px;
+}
+
+.heading-only-heading {
+    color: #000000;
+    font-size: 48px;
+}
+
+.text-button {
+    -webkit-app-region: no-drag;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.text-button:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.heading-only-subheading.text-button:focus {
+    background-color: #19b2a7;
+    outline: none;
+    font-style: normal;
+}
+
+.heading-only-subheading {
+    color: #000000;
+    width: 100%;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 32px;
+    margin: 16px 0;
+}
